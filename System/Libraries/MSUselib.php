@@ -105,7 +105,7 @@
 				}
 			}
 		}
-		function findChange($bul,$degistir,$yazi){
+		function findChange($bul,$degistir,$yazi = ""){
 			$yeni="";
 			for($i=0;$i<strlen($yazi);$i++){
 				if($bul==substr($yazi,$i,strlen($bul))){

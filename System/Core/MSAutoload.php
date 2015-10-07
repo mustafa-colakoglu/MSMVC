@@ -23,6 +23,7 @@ class MSAutoload
 		require SYSTEM_PATH."Libraries/get.php";
 		require SYSTEM_PATH."Libraries/MS.php";
 		require SYSTEM_PATH."Libraries/Uselib.php";
+		require SYSTEM_PATH."Libraries/Session.php";
 	}
 	private static  function autoloadFramework($className)
 	{
@@ -31,7 +32,8 @@ class MSAutoload
 		if(isset($classMap[$className]))
 		{
 			include $classMap[$className];
-		}else{
+		}
+		else{
 		
 			$className = ltrim($className, '\\');
 			$parts=explode("\\",$className);
