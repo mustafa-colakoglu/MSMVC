@@ -1,17 +1,15 @@
 <?php
 /**
-	* msMVC
-	* @package MSmvc
+	* MSMVC
+	* @package MSMVC
 	* @author Mustafa Çolakoğlu
 	* @since Version 1.0
 
 //---------------------------------------------------------------------------
 
-	* msMVC MSCache
-	* @package msMVC
-	* @subpackage libs
+	* MSMVC MSCache
+	* @package MSMVC
 	* @author Mustafa Çolakoğlu
-	
 **/
 	namespace MS;
 	use MS\MSCore;
@@ -72,5 +70,5 @@
 	}
 //---------------------------------------------------------------------------
 /* End of file MSCache.php */
-/* Location : ./system/core/libs/MSCache.php*/
+/* Location : ./System/Libraries/MSCache.php*/
 ?>

@@ -8,6 +8,7 @@
 	define("SYSTEM_PATH","./System/");
 	define("APPLICATION_PATH","./App/");
 	define("ENVIRONMENT","development");
+	define("ALERTS","on");
 	if (defined('ENVIRONMENT'))
 	{
 		switch (ENVIRONMENT)

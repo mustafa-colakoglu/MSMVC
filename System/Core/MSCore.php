@@ -21,7 +21,7 @@
 				$this->welcomeController = $config["SiteInfo"]["welcomeController"];
 			}
 			else{
-				$this->welcomeController = "Anasayfa";
+				$this->welcomeController = "Main";
 			}
 			if(isset($_GET["url"])){
 				$url = $_GET["url"];

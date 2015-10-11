@@ -1,17 +1,15 @@
 <?php
 /**
-	* msMVC
-	* @package MSmvc
+	* MSMVC
+	* @package MSMVC
 	* @author Mustafa Çolakoğlu
 	* @since Version 1.0
 
 //---------------------------------------------------------------------------
 
-	* msMVC MSDb
-	* @package msMVC
-	* @subpackage libs
+	* MSMVC MSCache
+	* @package MSMVC
 	* @author Mustafa Çolakoğlu
-	
 **/
 	namespace MS;
 	require APPLICATION_PATH."Config/Database.php";

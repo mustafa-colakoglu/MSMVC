@@ -1,11 +1,16 @@
 <?php
 /**
- *
- * @author Mustafa Çolakoğlu
- * @link http://www.mcolak.net/
- * @copyright 2015 MSMVC
- * @github https://github.com/mustafa220/MSMVC
- */
+	* MSMVC
+	* @package MSMVC
+	* @author Mustafa Çolakoğlu
+	* @since Version 1.0
+
+//---------------------------------------------------------------------------
+
+	* MSMVC MSCache
+	* @package MSMVC
+	* @author Mustafa Çolakoğlu
+**/
 	namespace MS;
 	use MS\MSLoad;
 	class MSController extends MSLoad{

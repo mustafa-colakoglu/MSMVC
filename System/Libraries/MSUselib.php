@@ -1,4 +1,16 @@
 <?php
+/**
+	* MSMVC
+	* @package MSMVC
+	* @author Mustafa Çolakoðlu
+	* @since Version 1.0
+
+//---------------------------------------------------------------------------
+
+	* MSMVC MSCache
+	* @package MSMVC
+	* @author Mustafa Çolakoðlu
+**/
 	namespace MS;
 	class MSUselib{
 		function formDataFix($degisken=false){

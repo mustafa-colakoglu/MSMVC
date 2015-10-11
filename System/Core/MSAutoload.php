@@ -100,6 +100,7 @@ class MSAutoload
 			"MS\MSModel" => SYSTEM_PATH."Libraries/MSModel.php",
 			"MS" => SYSTEM_PATH."Libraries/MS.php",
 			"MS\MSUselib" => SYSTEM_PATH."Libraries/MSUselib.php",
+			"Pagination" => SYSTEM_PATH."Libraries/Pagination.php",
 			"MS\Redis" => SYSTEM_PATH."Libraries/Redis.php",
 			"MS\Upload" => SYSTEM_PATH."Libraries/Upload.php"
 		);

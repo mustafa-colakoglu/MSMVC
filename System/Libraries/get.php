@@ -1,17 +1,15 @@
 <?php
 /**
-	* msMVC
-	* @package MSmvc
+	* MSMVC
+	* @package MSMVC
 	* @author Mustafa Çolakoğlu
 	* @since Version 1.0
 
 //---------------------------------------------------------------------------
 
-	* msMVC MSGet
-	* @package msMVC
-	* @subpackage libs
+	* MSMVC MSCache
+	* @package MSMVC
 	* @author Mustafa Çolakoğlu
-	
 **/
 	class get{
 		static function lang(){

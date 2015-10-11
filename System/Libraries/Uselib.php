@@ -1,4 +1,16 @@
 ﻿<?php
+/**
+	* MSMVC
+	* @package MSMVC
+	* @author Mustafa Çolakoğlu
+	* @since Version 1.0
+
+//---------------------------------------------------------------------------
+
+	* MSMVC MSCache
+	* @package MSMVC
+	* @author Mustafa Çolakoğlu
+**/
 	class Uselib{
 		static function formDataFix($degisken=false){
 			if($degisken){
