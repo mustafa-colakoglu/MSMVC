@@ -162,7 +162,7 @@
 						if(method_exists($running,"before")){
 							$running->before();
 						}
-						if($running->Cache){
+						if(isset($running->Cache)){
 							$this->runCache($running,$method,$controller);
 						}
 						else{
