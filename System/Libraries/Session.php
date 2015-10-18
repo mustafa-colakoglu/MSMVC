@@ -22,8 +22,13 @@
 			}
 		}
 		static function get($key = false){
-			if($key and isset($_SESSION[$key])){
-				return $_SESSION[$key];
+			if($key){
+				if(isset($_SESSION[$key])){
+					return $_SESSION[$key];
+				}
+				else{
+					return false;
+				}
 			}
 			else{
 				return false;
