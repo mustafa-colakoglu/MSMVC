@@ -141,10 +141,10 @@
 										<html>
 										<head>
 											<meta charset="utf-8" />
-											<title>Erişim Hatası</title>
+											<title>Erişim Engellendi</title>
 										</head>
 										<body>
-											Erişim Hatası.
+											Erişim Engellendi.
 										</body>
 										</html>';
 									}
