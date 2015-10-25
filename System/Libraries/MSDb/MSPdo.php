@@ -29,10 +29,10 @@
 		}
 		public function insert($tablo,$satirlar=false,$degerler){
 			$sql="INSERT INTO ".$tablo."(".$satirlar.") VALUES(".$degerler.")";
-			$this->sql = $sql;
 			if(!$satirlar){
 				$sql="INSERT INTO ".$tablo." VALUES(".$degerler.")";
 			}
+			$this->sql = $sql;
 			return $this->db->query($sql);
 		}
 		public function update($tablo,$set,$where=false,$diger=false){

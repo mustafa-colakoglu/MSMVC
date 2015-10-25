@@ -34,8 +34,9 @@
 					if($count>0){
 						$pageNumber = count($this->array)/$number;
 						if($pageNumber>intval($pageNumber)){
-							$pageNumber++;
+							$pageNumber = intval($pageNumber)+1;
 						}
+						$this->pageNumber = $pageNumber;
 					}
 				}
 			}
