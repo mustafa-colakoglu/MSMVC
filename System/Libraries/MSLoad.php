@@ -19,6 +19,7 @@
 	use get;
 	use MS\MSMemcache;
 	class MSLoad extends MSCore{
+		public $TempController;
 		function __construct(){
 			parent::__construct();
 			$this->startDrivers();
@@ -59,6 +60,9 @@
 				else{
 					$url = explode("/",$url);
 				}
+				if(!isset($this->TempController)){
+					$this->TempController = $url;
+				}
 				$controller = implode($url,"/");
 			}
 			$dir = APPLICATION_PATH."Main/Controllers/".implode($url,"/");
@@ -81,6 +85,7 @@
 			}
 			if(class_exists($controller)){
 				$running = new $controller();
+				$running->ControllerArray = $this->TempController;
 				$done = 0;
 				if(!method_exists($running,$method)){
 					$method = "actionIndex";
@@ -163,7 +168,9 @@
 							$running->before();
 						}
 						if(isset($running->Cache)){
-							$this->runCache($running,$method,$controller);
+							if(method_exists($running,$method)){
+								$this->runCache($running,$method,$controller);
+							}
 						}
 						else{
 							if(method_exists($running,$method)){
@@ -173,16 +180,17 @@
 						if(method_exists($running,"after")){
 							$running->after();
 						}
+						return $running;
 					}
 					else if(method_exists($running,"actionIndex")){
 						$running->actionIndex();
+						return $running;
 					}
 				}
-				return $running;
 			}
 			else{
-				if(class_exists("Controllers\hata")){
-					$running = new Controllers\hata();
+				if(class_exists("Controllers\Hata")){
+					$running = new Controllers\Hata();
 					if(method_exists($running,$method)){
 						$running->$method();
 					}

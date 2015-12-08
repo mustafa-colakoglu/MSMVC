@@ -14,8 +14,9 @@
 	namespace MS;
 	use MS\MSLoad;
 	class MSController extends MSLoad{
-		public $Cache=false;
-		public $CacheType="MSCache";
+		public $Cache;
+		public $CacheType;
+		public $ControllerArray;
 		function __construct(){
 			$this->load = new MSLoad();
 			parent::__construct();

@@ -130,8 +130,8 @@
 			return $yeni;
 		}
 		static function clean($temizlenen,$belirli=false){
-			if($belirli==""){
-				$cikar="'".'";/.,*=-+abcçdefgğhıijklmnoöprsştuüvyzABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ';
+			if(!$belirli){
+				$cikar="'".'";/.,*=-+qwertyuıopğüasdfghjklşizxcvbnmöçQWERTYUIOPĞÜASDFGHJKLŞİZXCVBNMÖÇ';
 			}
 			else{
 				$cikar=$belirli;

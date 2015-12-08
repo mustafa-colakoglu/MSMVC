@@ -43,7 +43,7 @@
 				$sql="UPDATE ".$tablo." SET ".$set;
 			}
 			$this->sql = $sql;
-			return $this->db->query($sql);
+			return $this->db->exec($sql);
 		}
 		public function delete($tablo,$where=false){
 			if($where){
