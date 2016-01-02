@@ -7,10 +7,8 @@
  * @copyright 2015 SmceFramework
  * @github https://github.com/imadige/SMCEframework-MVC
  */
-
 namespace MS;
-class MSAutoload 
-{
+class MSAutoload{
 	private static $config;
 	
 	
@@ -25,8 +23,7 @@ class MSAutoload
 		require SYSTEM_PATH."Libraries/Uselib.php";
 		require SYSTEM_PATH."Libraries/Session.php";
 	}
-	private static  function autoloadFramework($className)
-	{
+	private static  function autoloadFramework($className){
 		$classMap=self::classMap();
 		
 		if(isset($classMap[$className]))
@@ -93,8 +90,10 @@ class MSAutoload
 			"MS\CacheAdapter" => SYSTEM_PATH."Libraries/CacheAdapter.php",
 			"MS\MSCache" => SYSTEM_PATH."Libraries/MSCache.php",
 			"MS\MSController" => SYSTEM_PATH."Libraries/MSController.php",
+			"MS\MSCore" => SYSTEM_PATH."Core/MSCore.php",
 			"MS\MSDb" => SYSTEM_PATH."Libraries/MSDb.php",
 			"MS\MSLoad" => SYSTEM_PATH."Libraries/MSLoad.php",
+			"MS\MSLog" => SYSTEM_PATH."Libraries/MSLog.php",
 			"MS\MSGet" => SYSTEM_PATH."Libraries/MSGet.php",
 			"MS\MSMemcache" => SYSTEM_PATH."Libraries/MSMemcache.php",
 			"MS\MSModel" => SYSTEM_PATH."Libraries/MSModel.php",

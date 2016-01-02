@@ -7,7 +7,7 @@
 
 //---------------------------------------------------------------------------
 
-	* MSMVC MSCache
+	* MSMVC get
 	* @package MSMVC
 	* @author Mustafa Çolakoğlu
 **/
@@ -42,11 +42,16 @@
 			return include SYSTEM_PATH."/Libraries/get/symbols.php";
 		}
 		static function Config($Config,$indis = false){
-			require APPLICATION_PATH."/Config/".$Config.".php";
-			if($indis){
-				return $config[$Config][$indis];
+			if(file_exists(APPLICATION_PATH."/Config/".$Config.".php")){
+				require APPLICATION_PATH."/Config/".$Config.".php";
+				if($indis){
+					return $config[$Config][$indis];
+				}
+				return $config[$Config];
 			}
-			return $config["Config"];
+			else{
+				return false;
+			}
 		}
 	}
 //---------------------------------------------------------------------------

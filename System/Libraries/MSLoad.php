@@ -48,7 +48,7 @@
 				$this->controller($this->url);
 			}
 		}
-		public function controller($url = false,$method = "actionIndex"){			
+		public function controller($url = false,$method = "actionIndex"){	
 			if(!$url){
 				$this->controller($this->welcomeController);
 				return true;

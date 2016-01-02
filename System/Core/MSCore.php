@@ -54,7 +54,6 @@
 			}
 		}
 	}
-	require SYSTEM_PATH."Core/MSAutoload.php";
 //---------------------------------------------------------------------------
 /* End of file MSCore.php */
 /* Location : ./system/core/MSCore.php*/
