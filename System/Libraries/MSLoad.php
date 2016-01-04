@@ -216,12 +216,12 @@
 				}
 			}
 		}
-		public function model($modelName=false){
-			if($modelName){
-				$modelName = explode("/",$modelName);
-				$modelName = "Models\\".implode($modelName,"\\")."Model";
-				if(class_exists($modelName)){
-					return new $modelName;
+		public function model($ModelName=false){
+			if($ModelName){
+				$ModelName = explode("/",$ModelName);
+				$ModelName = "Models\\".implode($ModelName,"\\")."Model";
+				if(class_exists($ModelName)){
+					return new $ModelName;
 				}
 			}
 		}
