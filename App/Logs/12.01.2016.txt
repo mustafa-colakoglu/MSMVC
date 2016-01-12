@@ -1,0 +1,1 @@
+18.38.31	 : ::1 	 Sorgu Yapýldý : SELECT id,veri FROM testtablo   FROM : Anasayfa

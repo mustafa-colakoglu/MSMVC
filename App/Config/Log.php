@@ -1,3 +1,3 @@
 <?php
-	$config["Log"] = "off";
+	$config["Log"] = "on";
 ?>
