@@ -1,21 +1,35 @@
 <?php
 	namespace Models;
 	use MS\MSModel;
+	use PHPMailer;
 	class AnasayfaModel extends MSModel{
 		function __construct(){
 			parent::__construct();
 			
 		}
 		function veriler(){
-			$data["title"]="anasayfabaşlık";
-			$data["testVeri"]=$this->select("testtablo","","id,veri");
-			$veriler = $data["testVeri"];
-			$json = json_encode($veriler);
-			$decode = json_decode($json);
-			foreach($decode as $d){
-				echo $d->id."::".$d->veri."<br/>";
+			$mail = new PHPMailer();
+			$mail->IsSMTP();
+			$mail->SMTPDebug = 2;
+			$mail->DebugOutput = "html";
+			$mail->host = "mail.mcolak.net";
+			$mail->Port = 587;
+			$mail->SMTPSecure = "tls";
+			$mail->SMTPAuth = true;
+			$mail->Username = "mustafac@mcolak.net";
+			$mail->Password = "a05466329428a";
+			$mail->SetFrom("mustafac@mcolak.net","Mustafa Ç.");
+			$mail->AddAddress("musto_220@windowslive.com","Gönderilen?");
+			$mail->Subject = "test maili";
+			$mail->msgHTML('<b>Test maili geliyor :D </b>');
+			if($mail->send()){
+				echo '<font color=green>mail gönderildi</font>';
 			}
-			return $data;
+			else{
+				echo "<font color=red>mail gönderilemedi</font><br/>";
+				echo "<b>".$mail->ErrorInfo."</b>";
+			}
+			
 		}
 	}
 ?>

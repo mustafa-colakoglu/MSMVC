@@ -2,14 +2,14 @@
 /**
 	* MSMVC
 	* @package MSMVC
-	* @author Mustafa Çolakoðlu
+	* @author Mustafa Ã‡olakoÄŸlu
 	* @since Version 1.0
 
 //---------------------------------------------------------------------------
 
 	* MSMVC MSCache
 	* @package MSMVC
-	* @author Mustafa Çolakoðlu
+	* @author Mustafa Ã‡olakoÄŸlu
 **/
 	namespace MS;
 	class MSUselib{
@@ -20,10 +20,10 @@
 				$degisken=$this->findChange("'","&#39",$degisken);
 				$degisken=$this->findChange("?","&#63",$degisken);
 				$degisken=$this->findChange("`","&#96",$degisken);
-				$degisken=$this->findChange("‘","&#8216",$degisken);
-				$degisken=$this->findChange("’","&#8217",$degisken);
-				$degisken=$this->findChange("“","&#8220",$degisken);
-				$degisken=$this->findChange("”","&#8221",$degisken);
+				$degisken=$this->findChange("â€˜","&#8216",$degisken);
+				$degisken=$this->findChange("â€™","&#8217",$degisken);
+				$degisken=$this->findChange("â€œ","&#8220",$degisken);
+				$degisken=$this->findChange("â€","&#8221",$degisken);
 				$degisken=$this->findChange(":","&#58",$degisken);
 				$degisken=$this->findChange(";","&#59",$degisken);
 				$degisken=$this->findChange("<","&#60",$degisken);
@@ -38,10 +38,10 @@
 					$_POST[$key]=$this->findChange("'","&#39",$_POST[$key]);
 					$_POST[$key]=$this->findChange("?","&#63",$_POST[$key]);
 					$_POST[$key]=$this->findChange("`","&#96",$_POST[$key]);
-					$_POST[$key]=$this->findChange("‘","&#8216",$_POST[$key]);
-					$_POST[$key]=$this->findChange("’","&#8217",$_POST[$key]);
-					$_POST[$key]=$this->findChange("“","&#8220",$_POST[$key]);
-					$_POST[$key]=$this->findChange("”","&#8221",$_POST[$key]);
+					$_POST[$key]=$this->findChange("â€˜","&#8216",$_POST[$key]);
+					$_POST[$key]=$this->findChange("â€™","&#8217",$_POST[$key]);
+					$_POST[$key]=$this->findChange("â€œ","&#8220",$_POST[$key]);
+					$_POST[$key]=$this->findChange("â€","&#8221",$_POST[$key]);
 					$_POST[$key]=$this->findChange(":","&#58",$_POST[$key]);
 					$_POST[$key]=$this->findChange(";","&#59",$_POST[$key]);
 					$_POST[$key]=$this->findChange("<","&#60",$_POST[$key]);
@@ -54,10 +54,10 @@
 					$_GET[$key]=$this->findChange("'","&#39",$_GET[$key]);
 					$_GET[$key]=$this->findChange("?","&#63",$_GET[$key]);
 					$_GET[$key]=$this->findChange("`","&#96",$_GET[$key]);
-					$_GET[$key]=$this->findChange("‘","&#8216",$_GET[$key]);
-					$_GET[$key]=$this->findChange("’","&#8217",$_GET[$key]);
-					$_GET[$key]=$this->findChange("“","&#8220",$_GET[$key]);
-					$_GET[$key]=$this->findChange("”","&#8221",$_GET[$key]);
+					$_GET[$key]=$this->findChange("â€˜","&#8216",$_GET[$key]);
+					$_GET[$key]=$this->findChange("â€™","&#8217",$_GET[$key]);
+					$_GET[$key]=$this->findChange("â€œ","&#8220",$_GET[$key]);
+					$_GET[$key]=$this->findChange("â€","&#8221",$_GET[$key]);
 					$_GET[$key]=$this->findChange(":","&#58",$_GET[$key]);
 					$_GET[$key]=$this->findChange(";","&#59",$_GET[$key]);
 					$_GET[$key]=$this->findChange("<","&#60",$_GET[$key]);
@@ -74,10 +74,10 @@
 				$degisken=$this->findChange("'","&#39",$degisken);
 				$degisken=$this->findChange("?","&#63",$degisken);
 				$degisken=$this->findChange("`","&#96",$degisken);
-				$degisken=$this->findChange("‘","&#8216",$degisken);
-				$degisken=$this->findChange("’","&#8217",$degisken);
-				$degisken=$this->findChange("“","&#8220",$degisken);
-				$degisken=$this->findChange("”","&#8221",$degisken);
+				$degisken=$this->findChange("â€˜","&#8216",$degisken);
+				$degisken=$this->findChange("â€™","&#8217",$degisken);
+				$degisken=$this->findChange("â€œ","&#8220",$degisken);
+				$degisken=$this->findChange("â€","&#8221",$degisken);
 				$degisken=$this->findChange(":","&#58",$degisken);
 				$degisken=$this->findChange(";","&#59",$degisken);
 				$degisken=$this->findChange(" ","&nbsp;",$degisken);
@@ -91,10 +91,10 @@
 					$_POST[$key]=$this->findChange("'","&#39",$_POST[$key]);
 					$_POST[$key]=$this->findChange("?","&#63",$_POST[$key]);
 					$_POST[$key]=$this->findChange("`","&#96",$_POST[$key]);
-					$_POST[$key]=$this->findChange("‘","&#8216",$_POST[$key]);
-					$_POST[$key]=$this->findChange("’","&#8217",$_POST[$key]);
-					$_POST[$key]=$this->findChange("“","&#8220",$_POST[$key]);
-					$_POST[$key]=$this->findChange("”","&#8221",$_POST[$key]);
+					$_POST[$key]=$this->findChange("â€˜","&#8216",$_POST[$key]);
+					$_POST[$key]=$this->findChange("â€™","&#8217",$_POST[$key]);
+					$_POST[$key]=$this->findChange("â€œ","&#8220",$_POST[$key]);
+					$_POST[$key]=$this->findChange("â€","&#8221",$_POST[$key]);
 					$_POST[$key]=$this->findChange(":","&#58",$_POST[$key]);
 					$_POST[$key]=$this->findChange(";","&#59",$_POST[$key]);
 					$_POST[$key]=$this->findChange(" ","&nbsp;",$_POST[$key]);
@@ -106,10 +106,10 @@
 					$_GET[$key]=$this->findChange("'","&#39",$_GET[$key]);
 					$_GET[$key]=$this->findChange("?","&#63",$_GET[$key]);
 					$_GET[$key]=$this->findChange("`","&#96",$_GET[$key]);
-					$_GET[$key]=$this->findChange("‘","&#8216",$_GET[$key]);
-					$_GET[$key]=$this->findChange("’","&#8217",$_GET[$key]);
-					$_GET[$key]=$this->findChange("“","&#8220",$_GET[$key]);
-					$_GET[$key]=$this->findChange("”","&#8221",$_GET[$key]);
+					$_GET[$key]=$this->findChange("â€˜","&#8216",$_GET[$key]);
+					$_GET[$key]=$this->findChange("â€™","&#8217",$_GET[$key]);
+					$_GET[$key]=$this->findChange("â€œ","&#8220",$_GET[$key]);
+					$_GET[$key]=$this->findChange("â€","&#8221",$_GET[$key]);
 					$_GET[$key]=$this->findChange(":","&#58",$_GET[$key]);
 					$_GET[$key]=$this->findChange(";","&#59",$_GET[$key]);
 					$_GET[$key]=$this->findChange(" ","&nbsp;",$degisken);
@@ -132,7 +132,7 @@
 		}
 		function clean($temizlenen,$belirli=false){
 			if($belirli==""){
-				$cikar="'".'";/.,*=-+abcçdefgðhýijklmnoöprsþtuüvyzABCÇDEFGÐHIÝJKLMNOÖPRSÞTUÜVYZ';
+				$cikar="'".'";/.,*=-+abcÃ§defgÄŸhÄ±ijklmnoÃ¶prsÅŸtuÃ¼vyzABCÃ‡DEFGÄžHIÄ°JKLMNOÃ–PRSÅžTUÃœVYZ';
 			}
 			else{
 				$cikar=$belirli;
@@ -163,7 +163,7 @@
 			return $yeniVeri;
 		}
 		function seflink($baslik){
-			$bul = array('Ç', 'Þ', 'Ð', 'Ü', 'Ý', 'Ö', 'ç', 'þ', 'ð', 'ü', 'ö', 'ý', '-');
+			$bul = array('Ã‡', 'Åž', 'Äž', 'Ãœ', 'Ä°', 'Ã–', 'Ã§', 'ÅŸ', 'ÄŸ', 'Ã¼', 'Ã¶', 'Ä±', '-');
 			$yap = array('c', 's', 'g', 'u', 'i', 'o', 'c', 's', 'g', 'u', 'o', 'i', ' ');
 			$perma = strtolower(str_replace($bul, $yap, $baslik));
 			$perma = preg_replace("@[^A-Za-z0-9\-_]@i", ' ', $perma);

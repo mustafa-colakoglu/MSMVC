@@ -24,7 +24,7 @@
 			}
 			$sql="SELECT ".$column." FROM ".$table." ".$where." ".$other;
 			$this->sql = $sql;
-			$this->MSLog->insert("Sorgu Yapýldý : ".$this->sql);
+			$this->MSLog->insert("Sorgu YapÄ±ldÄ± : ".$this->sql);
 			$get = $this->db->query($sql);
 			$get->execute();
 			$data = $get->fetchAll();
@@ -36,7 +36,7 @@
 				$sql="INSERT INTO ".$tablo." VALUES(".$degerler.")";
 			}
 			$this->sql = $sql;
-			$this->MSLog->insert("Sorgu Yapýldý : ".$this->sql);
+			$this->MSLog->insert("Sorgu YapÄ±ldÄ± : ".$this->sql);
 			return $this->db->query($sql);
 		}
 		public function update($tablo,$set,$where=false,$diger=false){
@@ -47,7 +47,7 @@
 				$sql="UPDATE ".$tablo." SET ".$set;
 			}
 			$this->sql = $sql;
-			$this->MSLog->insert("Sorgu Yapýldý : ".$this->sql);
+			$this->MSLog->insert("Sorgu YapÄ±ldÄ± : ".$this->sql);
 			return $this->db->exec($sql);
 		}
 		public function delete($tablo,$where=false){
@@ -58,11 +58,11 @@
 				$sql="DELETE FROM ".$tablo;
 			}
 			$this->sql = $sql;
-			$this->MSLog->insert("Sorgu Yapýldý : ".$this->sql);
+			$this->MSLog->insert("Sorgu YapÄ±ldÄ± : ".$this->sql);
 			return $this->db->query($sql);
 		}
 		function lastInsertId(){
-			$this->MSLog->insert("Son insert id çekildi : ".$this->db->lastInsertId());
+			$this->MSLog->insert("Son insert id Ã§ekildi : ".$this->db->lastInsertId());
 			return $this->db->lastInsertId();
 		}
 	}

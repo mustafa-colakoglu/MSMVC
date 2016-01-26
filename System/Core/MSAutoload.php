@@ -102,7 +102,12 @@ class MSAutoload{
 			"Pagination" => SYSTEM_PATH."Libraries/Pagination.php",
 			"Json" => SYSTEM_PATH."Libraries/Json.php",
 			"MS\Redis" => SYSTEM_PATH."Libraries/Redis.php",
-			"MS\Upload" => SYSTEM_PATH."Libraries/Upload.php"
+			"MS\Upload" => SYSTEM_PATH."Libraries/Upload.php",
+			"PHPMailer" => SYSTEM_PATH."Libraries/PHPMailer/class.phpmailer.php",
+			"PHPMailerOAuth" => SYSTEM_PATH."Libraries/PHPMailer/class.phpmaileroauth.php",
+			"PHPMailerOAuthGoogle" => SYSTEM_PATH."Libraries/PHPMailer/class.phpmaileroauthgoogle.php",
+			"POP3" => SYSTEM_PATH."Libraries/PHPMailer/class.pop3.php",
+			"SMTP" => SYSTEM_PATH."Libraries/PHPMailer/class.smtp.php"
 		);
 	}
 }

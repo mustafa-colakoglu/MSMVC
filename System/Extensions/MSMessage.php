@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 	namespace MS;
 	use MS\MSDb;
 	class MSMessage extends MSDb{

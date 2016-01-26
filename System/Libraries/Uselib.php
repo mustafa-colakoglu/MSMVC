@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
 	* MSMVC
 	* @package MSMVC

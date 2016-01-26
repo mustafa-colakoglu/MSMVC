@@ -140,6 +140,7 @@
 								else{
 									if(isset($array["redirect"])){
 										header("Location:".$this->site."/".$array["redirect"]);
+										exit;
 									}
 									else{
 										echo '<!DOCTYPE html>
@@ -152,6 +153,7 @@
 											Erişim Engellendi.
 										</body>
 										</html>';
+										exit;
 									}
 								}
 								break;
