@@ -4,12 +4,15 @@
 	class MSMysql extends MSLoad{
 		function __construct(){
 			parent::__construct();
-			require APPLICATION_PATH."Config/Database.php";
-			if($config["Database"]["port"]){
-				$config["Database"]["server"]=$config["Database"]["server"].":".$config["Database"]["port"];
+		}
+		function connect($server = "localhost", $username = false, $password = "", $dbname = false, $port = false){
+			if($username and $dbname){
+				if($port){
+					$server = $server.":".$port;
+				}
+				mysql_connect($server,$username,$password);
+				mysql_select_db($dbname);
 			}
-			mysql_connect($config["Database"]["server"],$config["Database"]["username"],$config["Database"]["password"]);
-			mysql_select_db($config["Database"]["dbname"]);
 		}
 		function select($table,$where="",$column="",$other=""){
 			if($where!=""){

@@ -8,7 +8,7 @@
 			
 		}
 		function veriler(){
-			$mail = new PHPMailer();
+			/*$mail = new PHPMailer();
 			$mail->IsSMTP();
 			$mail->SMTPDebug = 2;
 			$mail->DebugOutput = "html";
@@ -29,7 +29,9 @@
 				echo "<font color=red>mail gönderilemedi</font><br/>";
 				echo "<b>".$mail->ErrorInfo."</b>";
 			}
-			
+			*/
+			$test = $this->select("testtablo");
+			var_dump($test);
 		}
 	}
 ?>

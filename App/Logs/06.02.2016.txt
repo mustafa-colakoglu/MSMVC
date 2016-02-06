@@ -1,0 +1,4 @@
+21.06.27	 : ::1 	 Sorgu Yapıldı : SELECT * FROM testtablo   FROM : Anasayfa
+21.37.51	 : ::1 	 Sorgu Yapıldı : SELECT * FROM    FROM : Anasayfa
+21.38.19	 : ::1 	 Sorgu Yapıldı : SELECT * FROM testtablo   FROM : Anasayfa
+21.40.46	 : ::1 	 Sorgu Yapıldı : SELECT * FROM testtablo   FROM : Anasayfa

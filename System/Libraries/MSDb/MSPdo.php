@@ -3,18 +3,21 @@
 	use MS\MSLoad;
 	use PDO;
 	use MS\MSLog;
-	class MSPdo extends MSLoad{
-		var $db;
+	class MSPdo{
+		public $db;
 		function __construct(){
-			parent::__construct();
-			require APPLICATION_PATH."Config/Database.php";
-			if($config["Database"]["port"]){
-				$config["Database"]["server"]=$config["Database"]["server"].":".$config["Database"]["port"];
-			}
-			$this->db = new PDO("mysql:host=".$config["Database"]["server"].";dbname=".$config["Database"]["dbname"],$config["Database"]["username"],$config["Database"]["password"]);
 			$this->MSLog = new MSLog();
 		}
-		function select($table,$where="",$column="",$other=""){
+		function connect($server = "localhost", $username = false, $password = "", $dbname = false, $port = false){
+			if($username and $dbname){
+				if($port){
+					$server = $server.":".$port;
+				}
+				$this->db = new PDO("mysql:host=".$server.";dbname=".$dbname,$username,$password);
+				
+			}
+		}
+		function select($table, $where="", $column="", $other=""){
 			$data = array();
 			if($where!=""){
 				$where="WHERE ".$where;
