@@ -17,7 +17,7 @@
 	class MSDb extends MSLoad{
 		// Variables
 		public $Config;
-		public $Database;
+		private $Database;
 		
 		function __construct(){
 			parent::__construct();
@@ -76,6 +76,9 @@
 		}
 		function delete($tablo,$where=false){
 			return $this->Database->delete($tablo,$where);
+		}
+		function lastInsertId(){
+			return $this->Database->lastInsertId();
 		}
 	}
 //---------------------------------------------------------------------------

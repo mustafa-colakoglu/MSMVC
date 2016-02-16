@@ -10,7 +10,7 @@
 				if($port){
 					$server = $server.":".$port;
 				}
-				mysql_connect($server,$username,$password);
+				@mysql_connect($server,$username,$password);
 				mysql_select_db($dbname);
 			}
 		}
