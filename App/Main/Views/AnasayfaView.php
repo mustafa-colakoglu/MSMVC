@@ -7,6 +7,6 @@
 </head>
 <body>
 	<h2>Tests</h2>
-	<a href="<?php echo MSGet::getSite(); ?>/multiLanguage">Multi Language System Test</a>
+	<a href="<?php echo get::site(); ?>/multiLanguage">Multi Language System Test</a>
 </body>
 </html>
