@@ -28,7 +28,10 @@ class MSAutoload{
 		
 		if(isset($classMap[$className]))
 		{
-			include $classMap[$className];
+			require $classMap[$className];
+		}
+		else if(is_file(APPLICATION_PATH."/Libraries/".$className.".php")){
+			require APPLICATION_PATH."/Libraries/".$className.".php";
 		}
 		else{
 		
