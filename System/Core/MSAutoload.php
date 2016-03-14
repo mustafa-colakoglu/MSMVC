@@ -18,8 +18,9 @@ class MSAutoload{
 	 * include class
 	 */
 	function loadMSStatic(){
-		require SYSTEM_PATH."Libraries/get.php";
 		require SYSTEM_PATH."Libraries/MS.php";
+		require SYSTEM_PATH."Libraries/get.php";
+		require SYSTEM_PATH."Libraries/Form.php";
 		require SYSTEM_PATH."Libraries/Uselib.php";
 		require SYSTEM_PATH."Libraries/Session.php";
 	}
