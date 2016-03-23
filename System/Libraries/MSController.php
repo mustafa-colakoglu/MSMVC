@@ -13,6 +13,7 @@
 **/
 	namespace MS;
 	use MS\MSLoad;
+	use get;
 	class MSController extends MSLoad{
 		public $Cache;
 		public $CacheType;
@@ -30,6 +31,11 @@
 			}
 			else{
 				return false;
+			}
+		}
+		function redirect($ControllerName = false){
+			if($ControllerName){
+				header("Location:".get::site()."/".$ControllerName);
 			}
 		}
 	}

@@ -8,6 +8,7 @@
 		}
 		function actionIndex(){
 			$this->model("Anasayfa")->veriler();
+			echo "Welcome to MS!";
 		}
 	}
 ?>

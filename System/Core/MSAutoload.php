@@ -105,6 +105,7 @@ class MSAutoload{
 			"MS\MSUselib" => SYSTEM_PATH."Libraries/MSUselib.php",
 			"Pagination" => SYSTEM_PATH."Libraries/Pagination.php",
 			"Json" => SYSTEM_PATH."Libraries/Json.php",
+			"System" => SYSTEM_PATH."Core/System.php",
 			"MS\Redis" => SYSTEM_PATH."Libraries/Redis.php",
 			"MS\Upload" => SYSTEM_PATH."Libraries/Upload.php",
 			"PHPMailer" => SYSTEM_PATH."Libraries/PHPMailer/class.phpmailer.php",

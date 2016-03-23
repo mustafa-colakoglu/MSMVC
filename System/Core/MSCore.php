@@ -1,6 +1,6 @@
 <?php
 /**
-	* msMVC
+	* MSMVC
 	* @package MSmvc
 	* @author Mustafa Çolakoğlu
 	* @since Version 1.0
@@ -14,17 +14,27 @@
 	
 **/
 	namespace MS;
+	use Form;
+	use System;
 	class MSCore{
 		function __construct(){
 			require APPLICATION_PATH."Config/SiteInfo.php";
+			if(Form::get("System")){
+				$System = new System;
+				$Method = Form::get("System");
+				if(method_exists($System,$Method)){
+					$System->$Method();
+				}
+				exit;
+			}
 			if($config["SiteInfo"]["welcomeController"]){
 				$this->welcomeController = $config["SiteInfo"]["welcomeController"];
 			}
 			else{
 				$this->welcomeController = "Main";
 			}
-			if(isset($_GET["url"])){
-				$url = $_GET["url"];
+			if(Form::get("url")){
+				$url = Form::get("url");
 			}
 			else{
 				$url = "";

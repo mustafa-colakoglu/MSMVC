@@ -30,8 +30,6 @@
 				echo "<b>".$mail->ErrorInfo."</b>";
 			}
 			*/
-			$test = $this->select("testtablo");
-			var_dump($test);
 		}
 	}
 ?>
