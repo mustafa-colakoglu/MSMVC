@@ -64,6 +64,16 @@
 			$this->MSLog->insert("Sorgu Yapıldı : ".$this->sql);
 			return $this->db->query($sql);
 		}
+		function query($query = false){
+			if(is_string($query)){
+				$this->db->query($query);
+			}
+		}
+		function exec($query = false){
+			if(is_string($query)){
+				$this->db->exec($query);
+			}
+		}
 		function lastInsertId(){
 			$this->MSLog->insert("Son insert id çekildi : ".$this->db->lastInsertId());
 			return $this->db->lastInsertId();

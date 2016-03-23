@@ -70,6 +70,11 @@
 			}
 			return mysql_query($sql);
 		}
+		function query($query = false){
+			if(is_string($query)){
+				mysql_query($query);
+			}
+		}
 		function lastInsertId(){
 			return mysql_insert_id();
 		}
