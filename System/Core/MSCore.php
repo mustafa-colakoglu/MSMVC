@@ -24,6 +24,7 @@
 				$Method = Form::get("System");
 				if(method_exists($System,$Method)){
 					$System->$Method();
+					echo $System->Message;
 				}
 				exit;
 			}

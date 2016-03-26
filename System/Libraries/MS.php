@@ -84,11 +84,13 @@ return array(");
 							fwrite($openFile,"
 );
 ?>");
+							fclose($openFile);
 						}
 						else{
 							$openFile = fopen(APPLICATION_PATH."/Languages/".$LanguageFile,"w+");
 							fwrite($openFile,"<?php return array(
 ); ?>");
+							fclose($openFile);
 						}
 					}
 				}

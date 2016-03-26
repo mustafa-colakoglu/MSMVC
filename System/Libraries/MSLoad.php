@@ -39,10 +39,15 @@
 			}
 		}
 		function first(){
-			if((is_array($this->url)) and ($this->url[0]=="css" or $this->url[0]=="js" or $this->url[0]=="images")){
-				$file = $this->site."/".APPLICATION_PATH."Front/".implode($this->url,"/");
-				header("Location:".$file);
-				return false;
+			if((is_array($this->url))){
+				if(in_array($this->url[0],get::config("Front"))){
+					$file = $this->site."/".APPLICATION_PATH."Front/".implode($this->url,"/");
+					header("Location:".$file);
+					return false;
+				}
+				else{
+					$this->controller($this->url);
+				}
 			}
 			else{
 				$this->controller($this->url);
